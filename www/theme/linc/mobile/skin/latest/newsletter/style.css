@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+
+/* 새글 스킨 (latest) */
+.lt_box {border:solid 0px #dddddd;padding:10px 30px 30px 30px;}
+.lt_box ul {margin:0 0 10px;padding:0;list-style:none}
+.lt_box li {padding:3px 0}
+.lt_box .lt_title {padding:6px 0px 0 0;font-weight:bold;font-size:24px;margin-bottom:40px;display:block;letter-spacing:-1px}
+.lt_box .lt_more {float:right; padding:6px 0px;font-size:19px}
+.lt_box .lt_table {clear:both;padding:0px 0 0 0px;display:flex;justify-content:space-around}
+.lt_box .lt_table .ltimg {width:40%;padding-right:25px}
+.lt_box .lt_table .ltimg img {width:100%}
+.lt_box .lt_table .ltlist {width:60%;}
+.lt_box .lt_table th {padding:0 0px 5px 0;}
+.lt_box .lt_table .pdl {padding-left:10px;}
+.lt_box .cnt_cmt {display:inline-block;margin:0 0 0 3px;font-weight:bold}
+.lt_box .list {font-size:14px;color:#999;padding:10px 0;overflow:hidden;border-bottom:1px solid #ddd;}
+.lt_box .list:nth-child(1) {padding-top:0px}
+.lt_box .list .datetime {font-size:12px;float:right;vertical-align:middle;margin-top:5px}
+.lt_box .lt_table .ltsubject {font-size:14px;color:#333;padding:10px 0;overflow:hidden;;}
+.lt_box .list .ellipsis {
+	display:inline-block;
+	width:70%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;  /* 말줄임 적용 */
+}
+
+
+@media all and (max-width: 768px){
+
+.lt_box .lt_table {clear:both;padding:0px 0 0 0px;display:block}
+.lt_box .lt_table .ltimg {width:100%;padding-right:0px}
+.lt_box .lt_table .ltlist {width:100%;}
+.lt_box {border:solid 0px #dddddd;padding:15px 30px 30px 30px;overflow:hidden;}
+.lt_box .lt_title {padding:6px 0px;font-weight:500;font-size:16px;margin-bottom:20px;display:block}
+.lt_box .list {font-size:14px;color:#999;padding:5px 0;overflow:hidden;border-bottom:1px solid #ddd;}
+.lt_box .list:nth-child(1) {padding-top:5px;border-top:1px solid #ddd;margin-top:15px}
+.dm-dark .lt_box {border:solid 0px #dddddd;padding:10px 30px 30px 30px;}
+
+}
+
+
+.dm-dark .lt_box .lt_title a {color:#fff !important}
+.dm-dark .lt_box .lt_table .ltsubject {color:#fff !important}
+.dm-dark .lt_box .list .ellipsis {color:#fff !important}
+.dm-dark .lt_box .list {border-bottom:1px solid #666 !important}

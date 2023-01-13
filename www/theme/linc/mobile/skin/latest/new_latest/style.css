@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+/* 전체최신글 목록 */
+#new_lat {position:relative;border:1px solid #e1e1e1;margin-bottom:15px}
+#new_lat .lat_title {display:block;padding:10px 0 8px 13px;font-size:1em;line-height:1.2em;background:#f2f5fc}
+#new_lat .tbl_head_lt {border-top:1px solid #d6d6d6;padding:8px 12px}
+#new_lat .tbl_head_lt table {width:100%;border-collapse:collapse;border-spacing:0}
+#new_lat .tbl_head_lt td {padding:5px 0;overflow:hidden;line-height:1.2em;word-break:break-all}
+#new_lat .td_subject {padding-right:10px}
+#new_lat .td_subject img {margin-left:2px}
+#new_lat .td_name {width:80px;font-size:11px;color:#999999;text-align:left}
+#new_lat .td_date {width:40px;font-size:11px;color:#999999;text-align:center}
+#new_lat .new_cmt {margin:0 0 0 3px;color:#ff3061;font-weight:normal}
+#new_lat .lat_board_link {display:inline-block;margin:0;padding:0;color:#777777 !important;font-weight:normal;text-decoration:none}

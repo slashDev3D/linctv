@@ -1,0 +1,99 @@
+@charset "utf-8";
+/* SIR 지운아빠 */
+
+/* 목록 테이블 */
+#bo_list .tbl_head01 {}
+#bo_list .tbl_head01 caption {}
+#bo_list .tbl_head01 thead th {}
+#bo_list .tbl_head01 thead a {}
+#bo_list .tbl_head01 thead th input {} /* middle 로 하면 게시판 읽기에서 목록 사용시 체크박스 라인 깨짐 */
+#bo_list .tbl_head01 tfoot th {}
+#bo_list .tbl_head01 tfoot td {}
+#bo_list .tbl_head01 tbody th {}
+#bo_list .tbl_head01 td {}
+#bo_list .tbl_head01 a {}
+#bo_list td.empty_table {}
+
+/* 게시판 목록 */
+#bo_list .td_board {width:120px;text-align:center}
+#bo_list .td_board a {font-weight:bold;color:#4a4a4a}
+#bo_list .td_subject img {margin-left:4px}
+#bo_list .td_name {width:80px;text-align:left}
+#bo_list .td_date {width:60px;text-align:center}
+.new_comment {color:#ff6600}
+.img_link {cursor:pointer}
+
+/* 팝업 */
+
+.reveal {
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     z-index: 99998;
+}
+
+.video-wrapper {
+    width: 100%;
+    z-index: 99999;
+}
+
+.video-wrapper_div2 {
+   width: 1000px;
+   margin: 150px auto;
+}
+
+
+.close_vimeo {position:absolute;top:-40px;right:0px;color:#fff;font-size:24px;z-index:99999;cursor:pointer}
+
+.video-wrapper_div {
+   position: relative;
+   height: 0;
+   padding-bottom: 56.25%;
+}
+
+.video-wrapper iframe {
+   border: 0px;
+   box-shadow: 30px 30px 50px rgba(0, 0, 0, 0.2);
+   z-index: 99999;
+}
+
+.reveal .video-popup-closer {
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background: rgba(0, 0, 0, 0.5);
+   z-index: 99998;
+}
+
+
+.reveal .video-popup-closer3 {
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background: rgba(0, 0, 0, 0.5);
+   z-index: 99998;
+}
+
+
+/*팝업 */
+        
+
+        
+
+ /* 동영상 영역 768px 이하 100% */
+@media all and (max-width: 768px) {
+
+   .video-wrapper_div2 {
+       width: 100%;
+       margin-top: 30px;
+    }
+
+
+}
+/* 동영상 영역 768px 이하 100% */

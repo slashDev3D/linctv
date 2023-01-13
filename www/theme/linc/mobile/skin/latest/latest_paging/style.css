@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* SIR 지운아빠 */
+
+/* 새글 스킨 (latest) */
+.lt_pc {float:left;margin-left:20px}
+.lt {float: left;
+    width: 100%;
+    position: relative;
+    padding-bottom: 10%;
+    margin-bottom: 10%;}
+.lt ul {margin:0 0 10px;padding:0;list-style:none}
+.lt li {padding:3px 0}
+.lt .lt_title {display:block;padding:10px 0 8px}
+.lt .lt_more {position:absolute;top:10px;right:0}
+.lt .cnt_cmt {display:inline-block;margin:0 0 0 3px;font-weight:bold}
+
+.blind,legend{display:block;overflow:hidden;position:absolute;top:-1000em;left:0}
+.page{font-size:.95em !important;line-height:1em !important; bottom:0px;}
+.page a,.page span{display:-moz-inline-block;display:-moz-inline-box;display:inline-block;position:relative;margin-left:-5px;padding:3px;vertical-align:top}
+.page a:hover{text-decoration:none}
+.page a{overflow:hidden;z-index:1;height:14px}
+.page .pre{padding-right:0}
+.page .next{padding-left:0}
+.page .num,.page .num span{margin-left:0;padding:0}
+.page .num{margin-top:4px;margin-right:5px;*margin-right:0;font-size:.9em;font-family:tahoma,sans-serif;color:#b3b7bc;letter-spacing:-1px}
+.page .num span{font-weight:bold}
+.page .num em{font-weight:bold;color:#848689}
+
+.page{position: absolute; left: 50%; margin-left: -50%; width: 100%; bottom: 0; text-align: center;}
+.page a{width:40px; height: 37px; font-size: 30px; line-height: 37px;}
+.page .pre,
+.page .next{ background-position: top center; background-size: cover;}
+.page .pre{background-image:url('./img/btn_page_prev.jpg');}
+.page .next{background-image:url('./img/btn_page_next.jpg');}
+
+.latest_line{ border-bottom: 1px solid #ccc; padding: 10px 0 10px;}
+.latest_line strong{ font-size: 24px;}
+.latest_line span{ font-size: 20px; white-space: nowrap; text-overflow: ellipsis; display: inline-block; overflow: hidden; width: 100%;}

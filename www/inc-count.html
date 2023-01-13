@@ -1,0 +1,63 @@
+<style>
+  #counter-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .counter-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 30px 50px;
+  }
+  .counter-container h3 {
+    font-size: 1.6rem;
+  }
+
+  .counter-container .counter {
+    font-size: 2rem;
+    margin-top: 10px;
+  }
+</style>
+<div id="counter-container">
+  <div class="counter-container">
+        <h3>오늘</h3>
+        <div class="counter" data-target="1000"></div>
+  </div>
+
+  <div class="counter-container">
+        <h3>최대</h3>
+        <div class="counter" data-target="3000"></div>
+  </div>
+
+  <div class="counter-container">
+        <h3>전체</h3>
+        <div class="counter" data-target="175000"></div>
+  </div>
+</div>
+<script>
+  const counters = document.querySelectorAll('.counter')
+
+  counters.forEach(counter => {
+      counter.innerText = '0'
+
+      const updateCounter = () => {
+          const target = +counter.getAttribute('data-target')
+          const c = +counter.innerText
+
+          const increment = target / 200
+
+          if(c < target) {
+              counter.innerText = `${Math.ceil(c + increment)}`
+              setTimeout(updateCounter, 1)
+          } else {
+              counter.innerText = target
+          }
+      }
+
+      updateCounter()
+  })
+</script>
